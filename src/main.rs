@@ -1,9 +1,7 @@
-use rayon::prelude::*;
-use std::io::{BufRead, Lines};
-
-use rayon::iter::IntoParallelRefIterator;
-
+#![allow(dead_code)]
 use anyhow::Result;
+use rayon::prelude::*;
+use std::io::BufRead;
 
 fn main() {
     //let test_cases = read_test_cases("test-sudoku2.txt");
@@ -23,9 +21,9 @@ fn main() {
                 //println!("{}", is_valid(&board_with_title.board));
 
                 let mut board = board_with_title.board;
-                let start = std::time::Instant::now();
+                //let start = std::time::Instant::now();
                 solve_board(&mut board);
-                let end = start.elapsed();
+                //let end = start.elapsed();
                 //println!("Solved:\n{}", board);
                 //println!("{}", is_valid(&board));
                 //println!("Time: {:?}\n", end);
