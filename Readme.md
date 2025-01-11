@@ -37,6 +37,9 @@ This is a simple Sudoku solver written in Rust. It reads Sudoku puzzles from tex
 
 Each line in the file represents a Sudoku puzzle in the Sudoku Exchange format. The first 12 characters are the title, followed by the puzzle cells.
 
+More information about the format can be found at https://github.com/grantm/sudoku-exchange-puzzle-bank.
+
 ### Custom Format
 
 Each puzzle starts with a title line followed by 9 lines representing the Sudoku board.
+
